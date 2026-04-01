@@ -1,0 +1,34 @@
+{
+  "name": "agwaslab",
+  "version": "1.0.0",
+  "description": "AgwasLab - Red Team Social Engineering Company Website",
+  "homepage": "https://agwaslab.co.ke",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "postbuild": "node -e \"require('fs').copyFileSync('404.html', 'dist/404.html')\"",
+    "preview": "vite preview",
+    "deploy": "npm run build && gh-pages -d dist"
+  },
+  "keywords": [
+    "agwaslab",
+    "security",
+    "red-team",
+    "phishing",
+    "social-engineering"
+  ],
+  "author": "AgwasLab",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@vitejs/plugin-react": "^6.0.1",
+    "esbuild": "^0.27.4",
+    "lucide-react": "^1.7.0",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
+    "vite": "^8.0.3"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.1.0"
+  }
+}
